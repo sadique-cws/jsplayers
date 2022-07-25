@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+    
+    <div class="player">
+        <!-- player music details -->
+        <div class="details">
+            <div class="now-playing">Playing X of Y</div>
+            <div class="track-art"></div>
+            <div class="track-name">Track Name</div>
+            <div class="track-artist">Track artist</div>
+        </div>
+
+        <!-- play buttons -->
+        <div class="buttons">
+            <div class="prev-track"><i class="bi bi-caret-left-fill"></i></div>
+            <div class="playpause-track"><i class="bi bi-play"></i></div>
+            <div class="next-track"><i class="bi bi-caret-right-fill"></i></div>
+        </div>
+
+        <!-- seeking slider -->
+        <div class="slider-container">
+            <div class="current-time">00:00</div>
+            <input type="range" min="1" max="100" value="0" class="seek-slider">
+            <div class="total-duration">00:00</div>
+        </div>
+
+        <!-- volume slider -->
+        <div class="slider-container">
+            <i class="bi bi-volume-down"></i>
+            <input type="range" min="1" max="100" value="0" class="volume-slider">
+            <i class="bi bi-volume-up"></i>            
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

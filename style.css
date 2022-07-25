@@ -1,0 +1,107 @@
+body{
+    background-color: lightgreen;
+    transition: background-color  .5s;
+}
+
+.player{
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.track-art{
+    margin: 25px;
+    height: 250px;
+    width: 250px;
+    background-image: url("https://th.bing.com/th/id/R.097129d8ee41f282cc10b7d0f35e000e?rik=O5APUNSbgwdW1w&riu=http%3a%2f%2fwww.music-bazaar.com%2falbum-images%2fvol1020%2f1003%2f1003232%2f2868001-big%2fTere-Bin-cover.jpg&ehk=KLfUS0DpCC6bWYDWpXQtCtP8R96hxQG856mrzUNDWf0%3d&risl=&pid=ImgRaw&r=0");
+    background-size: cover;
+    border-radius: 15%;
+}
+.now-playing{
+    font-size: 1rem;
+}
+.track-name{
+    font-size: 3rem;
+}
+.buttons{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.track-artist{
+    font-size: 1.5rem;
+}
+.playpause-track,.prev-track, .next-track{
+    padding: 10px 15px;
+    opacity: 0.8;
+    transition: opacity .2s;
+    background-color: black;
+    color: white;
+    margin: 0;
+    border-radius: 50%;
+    
+}
+.playpause-track:hover, .prev-track:hover, .next-track:hover{
+    opacity: 1.0;
+    
+}
+.playpause-track{
+    font-size: 4rem;
+   
+
+}
+.prev-track, .next-track{
+    font-size: 2rem;
+}
+
+.slider-container{
+    width: 70%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.seek-slider, .volume-slider{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+   height: 5px;
+   background-color: black;
+   opacity: 0.7;
+}
+.seek-slider::-webkit-slider-thumb, .volume-slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+}
+
+.seek-slider{
+    width: 60%;
+}
+.volume-slider{
+    width: 30%;
+}
+.current-time, .total-duration{
+    padding: 10px;
+}
+.slider-container>i{
+    padding: 10px;
+    cursor: pointer;
+}
