@@ -21,22 +21,22 @@
 
         <!-- play buttons -->
         <div class="buttons">
-            <div class="prev-track"><i class="bi bi-caret-left-fill"></i></div>
-            <div class="playpause-track"><i class="bi bi-play"></i></div>
-            <div class="next-track"><i class="bi bi-caret-right-fill"></i></div>
+            <div class="prev-track" onclick="prevTrack()"><i class="bi bi-caret-left-fill"></i></div>
+            <div class="playpause-track" onclick="playpauseTrack()"><i class="bi bi-play-fill"></i></div>
+            <div class="next-track" onclick="nextTrack();"><i class="bi bi-caret-right-fill"></i></div>
         </div>
 
         <!-- seeking slider -->
         <div class="slider-container">
             <div class="current-time">00:00</div>
-            <input type="range" min="1" max="100" value="0" class="seek-slider">
+            <input type="range" min="1" max="100" value="0" class="seek-slider" onchange="seekTo();">
             <div class="total-duration">00:00</div>
         </div>
 
         <!-- volume slider -->
         <div class="slider-container">
             <i class="bi bi-volume-down"></i>
-            <input type="range" min="1" max="100" value="0" class="volume-slider">
+            <input onchange="setVolume();" type="range" min="1" max="100" value="99" class="volume-slider">
             <i class="bi bi-volume-up"></i>            
         </div>
     </div>
